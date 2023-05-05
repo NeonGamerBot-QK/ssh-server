@@ -48,7 +48,6 @@ new Server(
     client
       .on("authentication", (ctx) => {
         let nick = ctx.username;
-        let prompt = PROMPT_NAME;
         let lowered;
 
         // if (!["keyboard-interactive"].includes(ctx.method))
@@ -162,7 +161,6 @@ new Server(
               screen.key(["escape", "q", "C-c", "^C"], function (ch, key) {
                 output.content = "";
                 output.add(`\u001b[2J\u001b[0;0H`);
-
                 screen.render();
                 stream.write("\u001b[2J\u001b[0;0H");
                 stream.write(`\x1Bc`);
@@ -181,6 +179,7 @@ new Server(
         }
       })
       .on("error", (err) => {
+        console.error(err);
         // Ignore errors
       });
   }
