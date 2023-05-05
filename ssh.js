@@ -4,7 +4,6 @@ const { readFileSync } = require("fs");
 
 const blessed = require("blessed");
 const { Server } = require("ssh2");
-const { exec } = require("child_process");
 
 function noop(v) {}
 /**
