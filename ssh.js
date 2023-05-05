@@ -179,7 +179,6 @@ new Server(
         }
       })
       .on("error", (err) => {
-        console.error(err);
         // Ignore errors
       });
   }
