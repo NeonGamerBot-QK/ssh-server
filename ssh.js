@@ -81,7 +81,7 @@ new Server(
             })
             .once("shell", (accept, reject) => {
               stream = accept();
-              users.push(stream);
+              // users.push(stream);
 
               stream.name = name;
               stream.rows = rows || 24;
