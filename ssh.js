@@ -52,8 +52,8 @@ new Server(
         let prompt = PROMPT_NAME;
         let lowered;
 
-        if (!["keyboard-interactive"].includes(ctx.method))
-          return ctx.reject(["keyboard-interactive"]);
+        // if (!["keyboard-interactive"].includes(ctx.method))
+        //   return ctx.reject(["keyboard-interactive"]);
 
         name = nick;
         ctx.accept();
