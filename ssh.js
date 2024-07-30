@@ -157,7 +157,14 @@ new Server(
               output.add(`{center}{bold}Loading...{/bold}{/center}`);
               // output.add(`\u001b[2J\u001b[0;0H`)
               // output.add(`{center}Some different {bold}{red-fg}content{/red-fg}{/bold}.{/center}`)
-
+setTimeout(() => {
+  output.content = "";
+  output.add(`\u001b[2J\u001b[0;0H`);
+  screen.render();
+  stream.write("\u001b[2J\u001b[0;0H");
+  stream.write(`\x1Bc`);
+  return stream.end();
+}, 15 * 60 * 1000)
               screen.key(["escape", "q", "C-c", "^C"], function (ch, key) {
                 output.content = "";
                 output.add(`\u001b[2J\u001b[0;0H`);

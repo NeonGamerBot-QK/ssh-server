@@ -2,7 +2,7 @@
 {center}{bold} Welcome to my custom ssh server {/bold} (if you tried hacking me you failed) {/center}
 {center}Hello User and welcome to this epic terminal{/center}
 {center}I am sure you were trying to access this server on {#111-fg}{bold}:22{/bold}{/} but this is actually a custom hosted node server instead {/center}
-{center} To exit terminal press {bold}ESC{/bold}, {bold}q{/bold} or {bold}^C{/bold} to exit {/center}
+{center} To exit terminal press {bold}ESC{/bold}, {bold}q{/bold} or {bold}^C{/bold} or wait 15mins to exit {/center}
 {center} Source code is available at {grey-fg}{bold} https://github.com/NeonGamerBot-QK/ssh-server {/bold}{/} {/center}
 {bold}  Site {/bold} {|} {bold} Contact {/bold} 
  
