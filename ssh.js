@@ -1,5 +1,5 @@
 'use strict'
-
+require('dotenv').config()
 const { readFileSync } = require('fs')
 
 const blessed = require('blessed')
