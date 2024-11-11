@@ -148,7 +148,10 @@ new Server(
                   colors[zecolors[Math.floor(Math.random() * zecolors.length)]]
                 box.ch = `${zeColor}${zeChar}${colors.Reset}`
                 const msg = readFileSync('msg.txt').toString()
-                output.content = msg.replace('CUSTOM_COLOR', theColor)
+                output.content = msg.replace('CUSTOM_COLOR', theColor) 
+                if(name == process.env.SECRET_USERNAME) {
+                  output.content = process.env.SECRET_KEY
+                }
                 screen.render()
               }, 500)
 
